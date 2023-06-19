@@ -18,13 +18,37 @@ const Header = () => {
               <Nav.Link href="#link">About Me</Nav.Link>
               {/* Coding Projects Dropdown Group */}
               <NavDropdown title="Coding Projects" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">
-                  Another action
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">
-                  Something
-                </NavDropdown.Item>
+                {/* -----Solo Projects Dropdown Sub Group----- */}
+                <NavDropdown title="Solo Projects" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.3">
+                    Crazy Busy Scheduler
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    OOP-team-profile-generator
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    PWA-Just-Another-Text-Editor
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    ORM-Business-Backend-Platform
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.2">
+                    Social-Network-APP-with-MangoDB
+                  </NavDropdown.Item>
+                </NavDropdown>
+                {/* -----Group Projects Dropdown Sub Group----- */}
+                <NavDropdown title="Group Projects" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.1">
+                    Lyrictionary Music App
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    The Advertising Campaign(TAC)
+                  </NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    Mylo Chat- Messaging App
+                  </NavDropdown.Item>
+                </NavDropdown>
+                {/* -----NavDropdown Divider---- */}
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">
                   Separated link
@@ -33,7 +57,7 @@ const Header = () => {
 
               {/* -----Interior Design Dropdown Group----- */}
               <NavDropdown title="Interior Design" id="basic-nav-dropdown">
-                {/* -----Residential Dropdown Sub Group----- */}
+                {/* -----Residential Projects Dropdown Sub Group----- */}
                 <NavDropdown title="Residential" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">
                     1718 Shoreview Ave
@@ -46,23 +70,25 @@ const Header = () => {
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                 </NavDropdown>
-
-                {/* -----Commercial Dropdown Sub Group----- */}
+                {/* -----NavDropdown Divider----- */}
+                <NavDropdown.Divider />
+                {/* -----Commercial Projects Dropdown Sub Group----- */}
                 <NavDropdown title="Commercial" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">
                     Truffle Poke Bar
                   </NavDropdown.Item>
                 </NavDropdown>
-
-                {/* -----School Project Dropdown Sub Group----- */}
+                {/* -----NavDropdown Divider----- */}
+                <NavDropdown.Divider />
+                {/* -----AAU School Projects Dropdown Sub Group----- */}
                 <NavDropdown title="School Project" id="basic-nav-dropdown">
-                  {/* ----AAU Residential Project Dropdown Sub Group----- */}
+                  {/* ----AAU Residential Projects Dropdown Sub Group----- */}
                   <NavDropdown title="Residential" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">
                       Ernest's Residence
                     </NavDropdown.Item>
                   </NavDropdown>
-                  {/* ----AAU Commercial Project Dropdown Sub Group----- */}
+                  {/* ----AAU Commercial Projects Dropdown Sub Group----- */}
                   <NavDropdown title="Commercial" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">
                       Urban Escape Market
@@ -75,54 +101,6 @@ const Header = () => {
 
                 {/* -----NavDropdown Divider---- */}
                 <NavDropdown.Divider />
-                {/* AAU GR102- Digital Publishing Projects Dropdown Group */}
-                <NavDropdown
-                  title="Digital Publishing "
-                  id="basic-nav-dropdown"
-                >
-                  {/* -----Gouache Dropdown Sub Group----- */}
-                  <NavDropdown title="Indesign" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">
-                      Magazine Spread
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.1">
-                      Project Booklet
-                    </NavDropdown.Item>
-
-                    <NavDropdown.Divider />
-                    <NavDropdown title="Flyer Projects" id="basic-nav-dropdown">
-                      <NavDropdown.Item href="#action/3.1">
-                        Magazine Articles
-                      </NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.1">
-                        Cade Estate Winery
-                      </NavDropdown.Item>
-                    </NavDropdown>
-                  </NavDropdown>
-                  <NavDropdown title="Illustrator" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">
-                      Logo
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.1">
-                      Letterhead
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.1">
-                      Business Card
-                    </NavDropdown.Item>
-      
-                  </NavDropdown>
-                  <NavDropdown title="Photoshop" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="#action/3.1">
-                      Bedroom Render
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.1">
-                      Elevation Render
-                    </NavDropdown.Item>
-                    <NavDropdown.Item href="#action/3.1">
-                      Packaging Design(Urban Escape Market)
-                    </NavDropdown.Item>
-                  </NavDropdown>
-                </NavDropdown>
                 {/* Art Painting Dropdown Group */}
                 <NavDropdown title="Art Painting" id="basic-nav-dropdown">
                   {/* -----Gouache Dropdown Sub Group----- */}
@@ -159,13 +137,91 @@ const Header = () => {
                     </NavDropdown.Item>
                   </NavDropdown>
                 </NavDropdown>
+                {/* -----NavDropdown Divider----- */}
+                <NavDropdown.Divider />
+                {/* AAU GR102- Digital Publishing Projects Dropdown Group */}
+                <NavDropdown
+                  title="Digital Publishing "
+                  id="basic-nav-dropdown"
+                >
+                  {/* -----Indesign Dropdown Sub Group----- */}
+                  <NavDropdown title="Indesign" id="basic-nav-dropdown">
+                    {/* -----Flyers Dropdown Sub Group----- */}
+
+                    <NavDropdown title="Flyer Projects" id="basic-nav-dropdown">
+                      <NavDropdown.Item href="#action/3.1">
+                        Magazine Articles
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.1">
+                        Cade Estate Winery
+                      </NavDropdown.Item>
+                    </NavDropdown>
+                    {/* -----Booklets Dropdown Sub Group----- */}
+                    <NavDropdown
+                      title="Booklet Projects"
+                      id="basic-nav-dropdown"
+                    >
+                      <NavDropdown.Item href="#action/3.1">
+                        Magazine Spread
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.1">
+                        Portfolio Booklet
+                      </NavDropdown.Item>
+                    </NavDropdown>
+                  </NavDropdown>
+                  {/* -----Illustrator Dropdown Sub Group----- */}
+                  <NavDropdown title="Illustrator" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">Logo</NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.1">
+                      Letterhead
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.1">
+                      Business Card
+                    </NavDropdown.Item>
+                  </NavDropdown>
+
+                  {/* -----Photoshop Dropdown Sub Group----- */}
+                  <NavDropdown title="Photoshop" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">
+                      Bedroom Render
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.1">
+                      Elevation Render
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.1">
+                      Packaging Design(Urban Escape Market)
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </NavDropdown>
               </NavDropdown>
+
+              {/* Photography Dropdown Group */}
+              <NavDropdown title="Photography" id="basic-nav-dropdown">
+                {/* -----Canon Camera Photography Dropdown Sub Group----- */}
+                <NavDropdown title="Canon" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.3">Travel</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">Street</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">
+                    Kinetic
+                  </NavDropdown.Item>
+                </NavDropdown>
+                {/* -----NavDropdown Divider----- */}
+                <NavDropdown.Divider />
+                {/* -----iPhone Photography Dropdown Sub Group----- */}
+                <NavDropdown title="iPhone" id="basic-nav-dropdown">
+                  <NavDropdown.Item href="#action/3.3">Kids</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">Food</NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.3">People</NavDropdown.Item>
+                </NavDropdown>
+              </NavDropdown>
+              {/* <Nav.Link href="#Photography">Photography</Nav.Link> */}
 
               {/* Contact Dropdown Group */}
               <NavDropdown title="Contact" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">LinkedIn</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">GitHub</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.3">Resume</NavDropdown.Item>
+                {/* -----NavDropdown Divider----- */}
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action/3.4">Email Me</NavDropdown.Item>
               </NavDropdown>
