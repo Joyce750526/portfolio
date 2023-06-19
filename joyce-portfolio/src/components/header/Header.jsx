@@ -36,6 +36,8 @@ const Header = () => {
                     Social-Network-APP-with-MangoDB
                   </NavDropdown.Item>
                 </NavDropdown>
+                {/* -----NavDropdown Divider----- */}
+                <NavDropdown.Divider />
                 {/* -----Group Projects Dropdown Sub Group----- */}
                 <NavDropdown title="Group Projects" id="basic-nav-dropdown">
                   <NavDropdown.Item href="#action/3.1">
@@ -48,11 +50,52 @@ const Header = () => {
                     Mylo Chat- Messaging App
                   </NavDropdown.Item>
                 </NavDropdown>
+
                 {/* -----NavDropdown Divider---- */}
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
-                  Separated link
-                </NavDropdown.Item>
+
+                {/* -----Leetcode Dropdown Group----- */}
+                <NavDropdown title="Leetcode Practice" id="basic-nav-dropdown">
+                  {/* -----2 Pointers Dropdown Sub Group----- */}
+                  <NavDropdown title="2 Pointers" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">
+                      Problem 1
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Problem 2
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      Problem 3
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                  {/* -----Silding Windows Dropdown Sub Group----- */}
+                  <NavDropdown title="Silding Windows" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">
+                      Problem 1
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Problem 2
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      Problem 3
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                  {/* -----Single Linked List Dropdown Sub Group----- */}
+                  <NavDropdown
+                    title="Single Linked List"
+                    id="basic-nav-dropdown"
+                  >
+                    <NavDropdown.Item href="#action/3.1">
+                      Problem 1
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      Problem 2
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      Problem 3
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                </NavDropdown>
               </NavDropdown>
 
               {/* -----Interior Design Dropdown Group----- */}
