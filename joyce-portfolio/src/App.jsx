@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
-import About from "./pages/about/About";
+// import About from "./pages/about/About";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -12,7 +12,7 @@ function App() {
     <div>
       <Header />
       <Home />
-      <About />
+      {/* <About /> */}
     </div>
   );
 }
