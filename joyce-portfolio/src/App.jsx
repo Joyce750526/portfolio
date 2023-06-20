@@ -1,18 +1,28 @@
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+
 import Header from "./components/header/Header";
 import Home from "./components/home/Home";
-// import About from "./pages/about/About";
+import About from "./pages/about/About";
+import "./pages/about/about.css";
+// import { Switch } from "react-router-dom";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <div>
-      <Header />
-      <Home />
-      {/* <About /> */}
+      {/* <Router>
+        <Switch>
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/about" component={About} /> */}
+          
+          <Header/>
+          <Home/>
+          <About/>
+        {/* </Switch>
+      </Router> */}
     </div>
   );
 }

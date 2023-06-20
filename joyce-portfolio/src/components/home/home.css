@@ -1,3 +1,21 @@
 .jumbotron {
+  margin: 20px;
+  color:darkolivegreen;
+  background-color:darkgray;
+  border-radius: 20px;
+} 
+/* .Carousel {
   margin: 40px;
+  padding: 20px;
+  background-color: aqua;
+  width: auto;
+  color: blue;
+  flex-wrap: wrap;
+  justify-content: space-between;
+} */
+.card_containter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
 }
